@@ -1,0 +1,193 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    /* Light gray background for better readability */
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #0056b3;
+    /* Darker blue border */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+header .logo {
+    width: 100px;
+    /* Adjust the width of the logo */
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    /* Black text */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+    /* Dark blue on hover */
+}
+
+/* Section */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    /* Blue header color */
+    margin-bottom: 15px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section p,
+.section ul,
+.section ol {
+    margin-top: 10px;
+}
+
+.section ul,
+.section ol {
+    padding-left: 20px;
+}
+
+.section ul li,
+.section ol li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #007BFF;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 5px solid #0056b3;
+    /* Darker blue border */
+}
+
+footer a {
+    color: #0056b3;
+    /* Dark blue text */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    /* Remove hover underline */
+}
+
+footer .footer-logo {
+    width: 80px;
+    /* Logo size for footer */
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icon {
+    width: 24px;
+    margin: 0 10px;
+}
+
+/* Buttons and Links */
+a {
+    color: #007BFF;
+    /* Blue links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    /* Dark blue on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .tagline {
+        font-size: 1rem;
+    }
+
+    footer .social-icon {
+        width: 20px;
+        /* Smaller social icon size for mobile */
+    }
+}
