@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footer) {
         const yearSpan = document.createElement('span');
         yearSpan.textContent = new Date().getFullYear();
-        footer.innerHTML += ` | &copy; ${yearSpan.textContent}`;
+        footer.innerHTML += ` COPYRIGHT  ${yearSpan.textContent}    &copy; `;
     }
 });
